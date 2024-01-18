@@ -1,0 +1,39 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
+    <div id="weather-container">
+      <div class="mt-5"></div>
+      <h2>Weather App</h2>
+      <h2>Da Nang</h2>
+      <i class="fas fa-cloud-sun" style="font-size: 128px; color: white"></i>
+      <div class="temp">
+        <p>Humadity: {{ prcp_last_date }} <i class="fa-solid fa-droplet"></i></p>
+        <p>Max {{ tmax_last_date }} ℃</p>
+        <p>Min: {{ tmin_last_date }} ℃</p>
+      </div>
+      <p>Tomorrow: {{ prediction_for_next_day }} ℃</p>
+      <img id="weather-icon" alt="Weather Icon" />
+      <div id="temp-div"></div>
+      <div id="weather-info"></div>
+      <div id="hourly-forecast"></div>
+    </div>
+  </body>
+  <script src="/static/js.js"></script>
+  <script
+    src="https://kit.fontawesome.com/a076d05399.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
