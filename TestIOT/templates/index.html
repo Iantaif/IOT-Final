@@ -16,14 +16,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   <body>
     <div id="weather-container">
       <div class="mt-5"></div>
-      <h2>Weather App</h2>
+      <h2 class ="Weather">WEATHER APP</h2>
       <h2>Da Nang</h2>
       <i class="fas fa-cloud-sun" style="font-size: 128px; color: white"></i>
       <div class="temp">
-        <p>Humadity: {{ prcp_last_date }} <i class="fa-solid fa-droplet"></i></p>
+        <p>Rain: {{ prcp_last_date }} <i class="fa-solid fa-droplet"></i></p>
         <p>Max {{ tmax_last_date }} ℃</p>
         <p>Min: {{ tmin_last_date }} ℃</p>
+        <p>Predict for tomorrow</p>
       </div>
+      <i class="fa-solid fa-sun" style="font-size: 48px; color: red"></i>
+
       <p>Tomorrow: {{ prediction_for_next_day }} ℃</p>
       <img id="weather-icon" alt="Weather Icon" />
       <div id="temp-div"></div>

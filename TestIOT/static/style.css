@@ -15,7 +15,7 @@ body {
 #weather-container {
     background: rgba(255, 255, 255, 0.3);
     width: 600px;
-    height:400px;
+    height:600px;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -98,4 +98,9 @@ button:hover {
 #hourly-heading {
     color: #fff;
     margin-top: 10px;
+}
+.Weather{
+    font-size: 60px;
+    padding-bottom: 10px;
+
 }

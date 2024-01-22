@@ -42,7 +42,7 @@ def index():
         new_data.index = pd.to_datetime(new_data.index)
 
         # Predict for the next day
-        prediction = model.predict(new_data)+20
+        prediction = model.predict(new_data)+17.3
 
         # Round and convert to int
 
